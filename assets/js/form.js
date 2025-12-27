@@ -4,7 +4,7 @@ e.preventDefault();
       const formData = new FormData(form);
       const data = Object.fromEntries(formData);
 
-      const res = await fetch('http://localhost:5000', {
+      const res = await fetch('https://our-website-backend-i1ht.onrender.com/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
